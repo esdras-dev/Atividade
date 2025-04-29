@@ -4,7 +4,6 @@ catalogo_magico = []
 
 # Passo 2: Adicionar Livros
 def adicionar_livro(catalogo, livro):
-    # Adiciona um livro ao final da lista do catálogo.
     catalogo.append(livro)
 
 # Adicionando os livros ao catálogo
