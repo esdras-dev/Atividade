@@ -32,7 +32,6 @@ print(catalogo_magico)
 
 # Passo 7: Verificar Presença
 def verificar_livro(catalogo, livro):
-    """Verifica se o livro está presente no catálogo."""
     return livro in catalogo
 
 # Verificando se "Segredos da Floresta Encantada" está no catálogo
