@@ -24,24 +24,24 @@ def processar_pedido(fila):
 
 # Processando o próximo pedido
 pedido_atendido = processar_pedido(fila_de_pedidos)
-print(f"\n Pedido atendido: {pedido_atendido}")
+print(f"Pedido atendido: {pedido_atendido}")
 
 # Passo 5: Verificar Fila Vazia
 def fila_vazia(fila):
     return len(fila) == 0
 
 # Verificando se ainda há pedidos na fila
-print(f"\n Ainda há pedidos na fila? {not fila_vazia(fila_de_pedidos)}")
+print(f"Ainda há pedidos na fila? {not fila_vazia(fila_de_pedidos)}")
 
 # Passo 6: Visualizar Fila Restante
-print("\n Fila de Pedidos Restante:")
+print("Fila de Pedidos Restante:")
 print(fila_de_pedidos)
 
 # Passo 7: Processar Pedidos Restantes
-print("\n Processando pedidos restantes:")
+print("Processando pedidos restantes:")
 while not fila_vazia(fila_de_pedidos):
     pedido = processar_pedido(fila_de_pedidos)
     print(f"Pedido atendido: {pedido}")
 
 # Verificando se a fila está vazia ao final
-print(f"\n Todos os pedidos foram processados? {fila_vazia(fila_de_pedidos)}")
+print(f"Todos os pedidos foram processados? {fila_vazia(fila_de_pedidos)}")
