@@ -21,24 +21,24 @@ def desempilhar_cristal(pilha):
 
 # Utilizando o cristal do topo em um ritual
 cristal_usado = desempilhar_cristal(torre_de_cristais)
-print(f"\n Cristal utilizado no ritual: {cristal_usado}")
+print(f"Cristal utilizado no ritual: {cristal_usado}")
 
 # Passo 5: Verificar Pilha Vazia
 def pilha_vazia(pilha):
     return len(pilha) == 0
 
 # Verificando se ainda há cristais
-print(f"\nAinda há cristais na torre? {not pilha_vazia(torre_de_cristais)}")
+print(f"Ainda há cristais na torre? {not pilha_vazia(torre_de_cristais)}")
 
 # Passo 6: Visualizar Pilha Restante
-print("\n Torre de Cristais Restante:")
+print("Torre de Cristais Restante:")
 print(torre_de_cristais)
 
 # Passo 7: Desempilhar Cristais Restantes
-print("\nUtilizando cristais restantes:")
+print("Utilizando cristais restantes:")
 while not pilha_vazia(torre_de_cristais):
     cristal = desempilhar_cristal(torre_de_cristais)
     print(f" Cristal utilizado: {cristal}")
 
 # Verificando se a pilha está vazia ao final
-print(f"\n Todos os cristais foram utilizados? {pilha_vazia(torre_de_cristais)}")
+print(f"Todos os cristais foram utilizados? {pilha_vazia(torre_de_cristais)}")
