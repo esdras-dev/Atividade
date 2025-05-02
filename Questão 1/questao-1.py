@@ -21,13 +21,13 @@ def buscar_livro(catalogo, indice):
 
 # Buscar o livro na posição 1
 livro_encontrado = buscar_livro(catalogo_magico, 1)
-print(f"\n Livro na posição 1: {livro_encontrado}")
+print(f"Livro na posição 1: {livro_encontrado}")
 
 # Passo 5: Remover Livro
 catalogo_magico.remove("A Jornada do Unicórnio Perdido")
 
 # Passo 6: Visualizar Catálogo Atualizado
-print("\n Catálogo Mágico Após Remoção:")
+print("Catálogo Mágico Após Remoção:")
 print(catalogo_magico)
 
 # Passo 7: Verificar Presença
@@ -36,4 +36,4 @@ def verificar_livro(catalogo, livro):
 
 # Verificando se "Segredos da Floresta Encantada" está no catálogo
 presente = verificar_livro(catalogo_magico, "Segredos da Floresta Encantada")
-print(f"\n'Segredos da Floresta Encantada' está no catálogo? {presente}")
+print(f"'Segredos da Floresta Encantada' está no catálogo? {presente}")
