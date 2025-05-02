@@ -38,7 +38,7 @@ print(torre_de_cristais)
 print("Utilizando cristais restantes:")
 while not pilha_vazia(torre_de_cristais):
     cristal = desempilhar_cristal(torre_de_cristais)
-    print(f" Cristal utilizado: {cristal}")
+    print(f"Cristal utilizado: {cristal}")
 
 # Verificando se a pilha está vazia ao final
 print(f"Todos os cristais foram utilizados? {pilha_vazia(torre_de_cristais)}")
